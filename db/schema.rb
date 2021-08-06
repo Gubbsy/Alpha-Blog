@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 2021_08_06_142811) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.time "created_at"
-    t.time "updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
