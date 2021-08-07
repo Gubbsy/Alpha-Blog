@@ -1,1 +1,10 @@
-@import "bootstrap/scss/bootstrap"
+/*
+*= require bootstrap
+*= require_tree .
+*= require_self
+*/
+
+@import "bootstrap/scss/bootstrap";
+@import "./custom.css.scss";
+
+
