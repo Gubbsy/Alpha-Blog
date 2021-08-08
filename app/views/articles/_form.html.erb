@@ -1,15 +1,6 @@
-
-<div class="container bg-dark text-white p-4 rounded mt-4">
-  <% if @article.errors.any? %>
-  <h2>The follow errors prevented the article from saving</h2>
-    <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-        <li> <%= msg %> </li>
-      <% end %>
-    </ul>
-  <% end %>
-
-  <div class="row justify-content-center">
+<%= render 'shared/errors' %>
+<div class="container">
+  <div class="row justify-content-center bg-dark text-white p-4 rounded mt-4">
     <div class="col-10 mt-2">
       <%= form_with(model: @article, local: true) do |f| %>
         <div class="form-group row">
